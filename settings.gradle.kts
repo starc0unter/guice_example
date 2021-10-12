@@ -1,4 +1,7 @@
-include("bindings")
 include("providers")
 include("injections")
 include("aop")
+include("bindings")
+include("guice")
+include("intro")
+include("singleton")

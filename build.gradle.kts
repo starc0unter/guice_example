@@ -5,15 +5,16 @@ plugins {
 group = "org.example"
 version = "1.0-SNAPSHOT"
 
-repositories {
-    mavenCentral()
-}
+allprojects {
+    apply(plugin = "java")
 
-dependencies {
-    testImplementation("org.junit.jupiter:junit-jupiter-api:5.6.0")
-    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine")
-}
+    repositories {
+        mavenCentral()
+    }
 
-tasks.getByName<Test>("test") {
-    useJUnitPlatform()
+    dependencies {
+        implementation("com.google.inject:guice:5.0.1")
+
+        implementation("org.jetbrains:annotations:13.0")
+    }
 }
