@@ -7,9 +7,6 @@ public final class Main {
 
     public static void main(@NotNull String[] args) {
         final var injector = Guice.createInjector(new TextEditorModule());
-        final var spellChecker = new SpellCheckerImpl();
-
-        injector.injectMembers(spellChecker);
 
         final TextEditor editor = injector.getInstance(TextEditor.class);
         System.out.println("spell1 " + editor.spellChecker.getId());

@@ -7,8 +7,7 @@ import guice.example.TestHelper;
 import guice.example.TestModule;
 import org.jetbrains.annotations.NotNull;
 
-public enum Main {
-    ;
+public final class Main {
 
     public static void main(@NotNull String[] args) {
         final Injector injector = Guice.createInjector(new SimpleModule());

@@ -11,5 +11,5 @@ public final class Class1 {
     private Class3 class3 = new Class3(class2);
 
     @NotNull
-    private Class3 class31 = new Factory().class3;
+    private Class3 class3_1 = new Factory().class3;
 }

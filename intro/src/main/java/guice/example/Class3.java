@@ -1,5 +1,6 @@
 package guice.example;
 
+import com.google.inject.Inject;
 import org.jetbrains.annotations.NotNull;
 
 public final class Class3 {

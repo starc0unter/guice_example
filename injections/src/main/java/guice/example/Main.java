@@ -19,3 +19,5 @@ public final class Main {
         injector.injectMembers(new TestClassWithConstructor(1));
     }
 }
+
+
