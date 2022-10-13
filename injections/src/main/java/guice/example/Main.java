@@ -13,7 +13,7 @@ public final class Main {
         injector.getInstance(InjectInConstructor.class).run();
         System.out.println(injector.getInstance(InjectInMethod.class).get());
         
-        // Инжектируем поля типа TestClassWithInterface
+        //инжектируем поля типа TestClassWithInterface
         TestClassWithInterface testClass = new TestClassWithConstructor(1);
         injector.injectMembers(testClass);
         testClass.run();
