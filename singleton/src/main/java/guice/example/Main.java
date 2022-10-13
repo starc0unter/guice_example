@@ -1,12 +1,13 @@
 package guice.example;
 
 import com.google.inject.Guice;
+import com.google.inject.Stage;
 import org.jetbrains.annotations.NotNull;
 
 public final class Main {
 
     public static void main(@NotNull String[] args) {
-        final var injector = Guice.createInjector(new TextEditorModule());
+        final var injector = Guice.createInjector(Stage.DEVELOPMENT, new TextEditorModule());
 
         final TextEditor editor = injector.getInstance(TextEditor.class);
         System.out.println("spell1 " + editor.spellChecker.getId());

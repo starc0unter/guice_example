@@ -4,6 +4,7 @@ import org.aopalliance.intercept.MethodInterceptor;
 import org.aopalliance.intercept.MethodInvocation;
 import org.jetbrains.annotations.NotNull;
 
+@SuppressWarnings("ALL")
 final class CallTrackerService implements MethodInterceptor {
 
   @Override

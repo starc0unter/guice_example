@@ -4,6 +4,7 @@ import com.google.inject.Singleton;
 
 @Singleton
 final class SpellCheckerImpl implements SpellChecker {
+
     private long id;
 
     public SpellCheckerImpl() {

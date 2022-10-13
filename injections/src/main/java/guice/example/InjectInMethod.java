@@ -2,17 +2,19 @@ package guice.example;
 
 import com.google.inject.Inject;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 
 public final class InjectInMethod {
-
-    @Inject
-    public void run(@NotNull TestClass testClass) {
-        testClass.run();
-    }
+    private @Nullable TestClass2 testClass;
 
     @Inject(optional = true)
-    public void run2(@NotNull TestClass2 testClass) {
-        testClass.run();
+    public void run2(@Nullable TestClass2 testClass) {
+        this.testClass = testClass;
     }
+
+    public TestClass2 get() {
+        return testClass;
+    }
+
 }

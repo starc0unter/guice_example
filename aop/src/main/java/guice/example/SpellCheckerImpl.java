@@ -1,6 +1,6 @@
 package guice.example;
 
-public final class SpellCheckerImpl implements SpellChecker {
+public class SpellCheckerImpl implements SpellChecker {
     @Override
     @CallTracker
     public void checkSpelling() {

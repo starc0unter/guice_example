@@ -5,9 +5,9 @@ import org.jetbrains.annotations.NotNull;
 
 import javax.inject.Inject;
 
+@SuppressWarnings("NotNullNullableValidation")
 public final class InjectInConstructor {
 
-    @NotNull
     private final TestClass testClass;
 
     @Inject

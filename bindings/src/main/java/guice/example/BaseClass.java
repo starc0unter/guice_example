@@ -1,5 +1,5 @@
 package guice.example;
 
-public interface  BaseClass {
+public interface BaseClass {
      void run();
 }

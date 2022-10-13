@@ -5,18 +5,21 @@ import com.google.inject.Provider;
 import org.jetbrains.annotations.NotNull;
 
 
+@SuppressWarnings("ALL")
 public final class SimpleProvided {
-    @NotNull
+
     private final Provider<TestClass> testClassProvider;
 
     @Inject
-    public SimpleProvided(@NotNull Provider<TestClass> testClassProvider) {
+    public SimpleProvided(Provider<TestClass> testClassProvider) {
         this.testClassProvider = testClassProvider;
     }
 
     public void run() {
+        // создаем первый экземпляр
         testClassProvider.get().run();
-
+        // создаем второй экземпляр
         testClassProvider.get().run();
     }
+
 }
